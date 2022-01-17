@@ -1,87 +1,93 @@
 html {
-    box-sizing: border-box;
-    font-size: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    background-color: #060042;
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(2%,#060042),color-stop(108%,#20A39E));
-    background-image: linear-gradient(#060042 2%,#20A39E 108%);
-    color: #ffffff;
-    min-height: 100vh;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+  background-color: #060042;
+  background-image: url("../img/tech_bg.jpg");
+  background-size: 400px;
+  background-repeat: repeat;
+  color: #ffffff;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .logo {
-    width: 120px;
+  width: 120px;
 }
 
-a, a.featured {    
-    &:hover {
-        background-color: #060042;
-        color: #ffffff;
-    }
+a,
+a.featured {
+  &:hover {
+    background-color: #060042;
+    color: #ffffff;
+  }
 }
 
 a {
-    display: block;
-    max-width: 400px;
-    margin: 0 auto 15px auto;
-    padding: 15px 20px;
-    font-size: 0.85rem;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    text-decoration: none;
-    transition: all 200ms ease-in-out;
-    
-    &.featured {
-        position: relative;
-        background-color: #ffffff;
-        color: #060042;
-        font-weight: bold;
+  display: block;
+  max-width: 400px;
+  margin: 0 auto 15px auto;
+  padding: 15px 20px;
+  font-size: 0.85rem;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
 
-        &:before {
-            content: "";
-            position: absolute;
-            top: 2px;
-            left: 2px;            
-            width: calc(100% - 4px);
-            height: calc(100% - 4px);
-            border: 2px solid #060042;
-        }
+  &.featured {
+    position: relative;
+    background-color: #ffffff;
+    color: #060042;
+    font-weight: bold;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      border: 2px solid #060042;
     }
+  }
 }
 
 h2 {
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: normal;
-    letter-spacing: 2px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 2px;
 }
 
 .channels {
-    display: flex;
-    max-width: 400px;
-    margin: 0 auto;
-    
-    a {
-        flex: 1;
-        padding: 5px 10px;
-        margin-right: 10px;
-        background-color: #060042;
-        border: none;
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
 
-        &:last-child {
-            margin-right: 0px;
-        }
+  a {
+    flex: 1;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #060042;
+    border: none;
 
-        &:hover {
-            text-decoration: underline;
-        }
+    &:last-child {
+      margin-right: 0px;
     }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
