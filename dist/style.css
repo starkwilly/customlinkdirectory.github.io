@@ -1,31 +1,47 @@
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 100%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-  background-color: #060042;
-  background-image: url("../img/circuit_bg.webp");
-  background-size: 400px;
-  background-repeat: repeat;
+  background: rgb(0, 56, 101);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(0, 56, 101, 1) 40%,
+    rgba(208, 84, 84, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(0, 56, 101, 1) 40%,
+    rgba(208, 84, 84, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(0, 56, 101, 1) 40%,
+    rgba(208, 84, 84, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003865",endColorstr="#d05454",GradientType=1);
   color: #ffffff;
   min-height: 100vh;
   margin: 10px;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .logo {
   width: 120px;
 }
 
-a:hover, a.featured:hover {
+a:hover,
+a.featured:hover {
   background-color: #060042;
   color: #ffffff;
 }
@@ -97,8 +113,8 @@ h2:first-of-type {
 
 .channels a {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   padding: 5px 10px;
   margin-right: 10px;
   background-color: #ffffff;
